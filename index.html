@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>telegForm</title>
+</head>
+<body>
+    <main>
+        <form class="form">
+            <label for="">Имя</label>
+            <input type="text" name="Имя" required>
+
+            <label for="">Фамилия</label>
+            <input type="text" name="Фамилия" required>
+
+            <p>Придете со своей второй половинкой?:</p>
+
+            <label>
+                <input type="radio" name="Супруга/супруг" value="Да" checked> да
+            </label>
+            <label>
+                <input type="radio" name="Супруга/супруг" value="Нет"> нет
+            </label>
+
+            <p>Вы придете к нам на праздник?:</p>
+
+            <label>
+                <input type="radio" name="Придут" value="Да" checked> возможно
+            </label>
+            <label>
+                <input type="radio" name="Придут" value="Нет" > сории но нет
+            </label>
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
