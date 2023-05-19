@@ -21,7 +21,7 @@ const telegram = {
 }
 
 const server = () => {
-    fetch(`https://api.telegram.org/bot${telegram.token}/sendMessage?chat_id=${telegram.chat}&parse_mode=html&text=${JSON.stringify(msg).replace(/"/g, '')}`, {
+    fetch(`https://api.telegram.org/bot${telegram.token}/sendMessage?chat_id=${telegram.chat}&parse_mode=html&text=${JSON.stringify(msg).replace(/["{}]/g, '').replace(/,/g, '%0A')}`, {
         method: 'POST',
         'Content-Type': 'application/json',
     }) 
